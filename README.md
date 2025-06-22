@@ -5,6 +5,7 @@
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen?logo=githubactions)]()
 [![Code Size](https://img.shields.io/github/languages/code-size/durachill/BST-C)]()
 [![Last Commit](https://img.shields.io/github/last-commit/durachill/BST-C?color=blue)]()
+### о проекте
 Система для управления клеточным роботом, осуществляющим передвижение по квадратному клеточному лабиринту. Робот может перемещаться в соседние клетки при отсутствии препятствий. Реализован формальный язык программирования для управления роботом с последующей компиляцией через `flex` и `bison`.
 ## Основные возможности языка
 
