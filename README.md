@@ -1,4 +1,9 @@
 # Интерпретатор для клеточного робота
+[![C++ Standard](https://img.shields.io/badge/C++-20-blue?logo=cplusplus)]()
+[![License](https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative)]()
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen?logo=githubactions)]()
+[![Code Size](https://img.shields.io/github/languages/code-size/durachill/BST-C)]()
+[![Last Commit](https://img.shields.io/github/last-commit/durachill/BST-C?color=blue)]()
 Система для управления клеточным роботом, осуществляющим передвижение по квадратному клеточному лабиринту. Робот может перемещаться в соседние клетки при отсутствии препятствий. Реализован формальный язык программирования для управления роботом с последующей компиляцией через `flex` и `bison`.
 ## Основные возможности языка
 
