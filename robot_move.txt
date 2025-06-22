@@ -1,0 +1,49 @@
+TASK FINDEXIT() {
+    VAR env = GET ENVIRONMENT;
+    PRINT env;
+
+    VAR center = 5;
+    VAR i = 0;
+    VAR j = 0;
+    VAR k = 0;
+    VAR l = 0;
+    
+    FOR i BOUNDARY 1000 STEP 1 {
+        env = GET ENVIRONMENT;
+        j = 0;
+
+        FOR j BOUNDARY 4 STEP 1{
+            SWITCH (env[j, 6, 2] == TRUE){
+                k = k+1;
+                FOR l BOUNDARY k STEP 1{
+                    MOVE;
+                }
+            }
+            SWITCH (env[6+j, 6, 2] == TRUE){
+                ROTATE RIGHT;
+                ROTATE RIGHT;
+                MOVE;
+            }
+            SWITCH (env[j, 5, 2] == TRUE){
+                ROTATE LEFT;
+                MOVE;
+            }
+            SWITCH (env[6+j, 5, 2] == TRUE){
+                ROTATE RIGHT;
+                MOVE;
+            }
+        }
+        
+        SWITCH (env[5, 6, 1] == FALSE) { 
+            MOVE;
+        }
+        SWITCH (env[5, 6, 1] == TRUE) { 
+            ROTATE RIGHT;
+        }ELSE{
+            ROTATE LEFT;
+            SWITCH (env[6, 5, 1] == FALSE) { 
+                ROTATE RIGHT;
+            }
+        } 
+    }
+}

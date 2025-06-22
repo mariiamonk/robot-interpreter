@@ -1,0 +1,32 @@
+TASK FACTORIAL(n) {
+    VAR res = 0;
+    SWITCH ((n == 0) OR (n == 1)){
+        res = 1;
+    }ELSE{
+        res =  (n*(DO FACTORIAL(n - 1)));
+    }
+    RESULT res;
+}
+
+TASK FIBONACCI(n) {
+    VAR res = 0;
+    SWITCH(n <= 1){
+        res = 1;
+    }ELSE{
+        res = ((DO FIBONACCI(n - 1)) + (DO FIBONACCI(n - 2)));
+    }
+    RESULT res;
+}
+
+TASK FINDEXIT() {
+    VAR number = 5;
+    VAR fact = DO FACTORIAL(number);
+    PRINT fact;
+
+    VAR fib = 0;
+    FOR i BOUNDARY 10 STEP 1 {
+        fib = DO FIBONACCI(i);
+        PRINT fib;
+    }
+    RESULT 0;
+}

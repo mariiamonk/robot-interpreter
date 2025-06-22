@@ -1,0 +1,32 @@
+TASK FINDEXIT(){
+    VAR a = 23;
+    PRINT a;
+
+    VAR b = FALSE;
+    PRINT b;
+
+    PRINT ((a + 11) / 2);
+    PRINT (NOT b);
+
+    b = DIGITIZE (b);
+    PRINT b;
+
+    a = (a + 10);
+    PRINT a;
+
+    VAR arr[2] = 0;
+    PRINT arr[1];
+
+    arr[1] = 100;
+    PRINT arr[1];
+
+    VAR arr2[2,2] = 10;
+    PRINT arr2[1,2];
+
+    PRINT (SIZE (arr2));
+
+    arr2 = REDUCE arr2[1,1];
+    PRINT (SIZE (arr2));
+
+    RESULT 0;
+}

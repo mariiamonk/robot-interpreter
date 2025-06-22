@@ -1,0 +1,13 @@
+TASK FINDEXIT(){
+    VAR a = 4;
+    FOR i BOUNDARY 3 STEP 1{
+        a = (a + 4);
+        PRINT a;
+    }
+    SWITCH (a >= 5) {
+        a = (a * 2);
+    }ELSE{
+        a = (a * 3);
+    }
+    PRINT a;
+}
